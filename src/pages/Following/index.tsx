@@ -1,10 +1,12 @@
 import React, { useMemo } from "react";
-import { FlatList, View } from "react-native";
+import { FlatList } from "react-native";
 
 import Header from "../../components/Header";
 import Heading from "../../components/Heading";
 import Title from "../../components/Title";
 import CategoryList from "../../components/CategoryList";
+import StreamList from "../../components/StreamList";
+import ChannelList from "../../components/ChannelList";
 
 import { Wrapper, Container, Main } from "./styles";
 
@@ -37,7 +39,7 @@ const Following: React.FC = () => {
       },
       {
         key: "C2",
-        render: () => <View />,
+        render: () => <StreamList />,
       },
       {
         key: "CONTINUE_WATCHIBG",
@@ -46,7 +48,7 @@ const Following: React.FC = () => {
       },
       {
         key: "C3",
-        render: () => <View />,
+        render: () => <StreamList />,
       },
       {
         key: "OFFLINE_CHANNELS",
@@ -55,7 +57,7 @@ const Following: React.FC = () => {
       },
       {
         key: "C4",
-        render: () => <View />,
+        render: () => <ChannelList />,
       },
     ];
 
